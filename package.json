@@ -12,7 +12,7 @@
     "node": ">=20.0.0"
   },
   "scripts": {
-    "build": "npm run build --workspaces --if-present",
+    "build": "node api.js && npm run build --workspaces --if-present",
     "test": "npm run test --workspaces --if-present",
     "lint": "eslint . --ext .ts",
     "format": "prettier --check .",
